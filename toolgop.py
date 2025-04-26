@@ -101,7 +101,6 @@ while True:
 		exec(requests.get('https://raw.githubusercontent.com/Phuocnifepkay/PhuocAb/refs/heads/main/shareaofb.py?token=GHSAT0AAAAAADCYQLEUJOVQJQEGZIMDCRNK2AMJLCQ').text)
 	elif chon == '5':
 		# Thanh Công
-		    exec(requests.get('https://raw.githubusercontent.com/MaulanaRyM/SpaMsmS/refs/heads/master/sms.php').text)
-	
+		    exec(requests.get('https://raw.githubusercontent.com/Phuocnifepkay/l-n/refs/heads/main/toolgop.py').text
 	else:
 		sys.exit("")
