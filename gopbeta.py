@@ -92,8 +92,8 @@ while True:
 		sys.exit("Tool đang bảo.trì,chx làm dc!")
 	elif chon == '3.2':
 		# Thanh Công
-		exec(requests.get('https://raw.githubusercontent.com/Phuocnifepkay/PhuocAb/refs/heads/main/tdstiktokk.py?token=GHSAT0AAAAAADCYQLEVYZKDBITTQ6O7MWUG2AKROHA').text)
-	elif chon == '3.3':
+		exec(requests.get('https://raw.githubusercontent.com/Phuocnifepkay/l-n/refs/heads/main/tdstikv2.py').text)
+  elif chon == '3.3':
 		# Thanh Công
 		sys.exit("Tool đang bảo.trì,chx làm dc!")
 	elif chon == '4.1':
