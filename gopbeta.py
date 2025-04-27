@@ -67,9 +67,9 @@ while True:
 	print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m3.2 \033[1;97m: \033[1;34mTool TDS TikTok \033[1;32m[Online]")
 	print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m3.3 \033[1;97m: \033[1;34mTool TDS Instagram \033[1;32m[Comingsoon]")
 	print("\033[1;37m╔══════════════════════╗         ")
-	print("\033[1;37m║  \033[1;32mTool FB \033[1;37m     ║   ")
+	print("\033[1;37m║  \033[1;32mTool Buff Tiktok \033[1;37m     ║   ")
 	print("\033[1;37m╚══════════════════════╝           ")
-	print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m4.1 \033[1;97m: \033[1;34mTool Share Ảo FB \033[1;32m[Online]")
+	print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m4.1 \033[1;97m: \033[1;34mTool Buff Tiktok VIP PỜ RỒ 🤑 \033[1;32m[Online]")
 	print("\033[1;37m╔══════════════════════╗         ")
 	print("\033[1;37m║  \033[1;32mTool Spam Vip \033[1;37m      ║   ")
 	print("\033[1;37m╚══════════════════════╝           ")
@@ -93,12 +93,9 @@ while True:
 	elif chon == '3.2':
 		# Thanh Công
 		exec(requests.get('https://raw.githubusercontent.com/Phuocnifepkay/l-n/refs/heads/main/tdstikv2.py').text)
-        elif chon == '3.3':
-		# Thanh Công
-		sys.exit("Tool đang bảo.trì,chx làm dc!")
 	elif chon == '4.1':
 		# Thanh Công
-		exec(requests.get('https://raw.githubusercontent.com/Phuocnifepkay/PhuocAb/refs/heads/main/shareaofb.py?token=GHSAT0AAAAAADCYQLEUJOVQJQEGZIMDCRNK2AMJLCQ').text)
+		exec(requests.get('https://raw.githubusercontent.com/Phuocnifepkay/l-n/refs/heads/main/buff.py').text)
 	elif chon == '5':
 		# Thanh Công
 		    exec(requests.get('https://raw.githubusercontent.com/Phuocnifepkay/l-n/refs/heads/main/spamsms.py').text)
