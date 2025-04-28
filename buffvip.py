@@ -39,11 +39,11 @@ def main():
                 continue
             kieu = 'like'
         elif luachon == 3:
-            user = str(input("Nhập Username : "))
+            user = str(input("Nhập Username muốn búc: "))
             if user[0]!='@' :
                 user = '@'+user
             while True:
-                link = str(input("Nhập Link Video : "))
+                link = str(input("Nhập Link Video muốn búc: "))
                 if re.search(r'http://vt.tiktok.com/+', link):
                     break
                 elif re.search(r'/photo/\d+', link):
