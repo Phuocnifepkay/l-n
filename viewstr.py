@@ -6,7 +6,7 @@ key1=str(ngay*9988+5413)
 key = 'p_tool'+key1
 
 url = 'https://www.webkey.x10.mx/?ma='+key
-token_link4m = '677143981fa90765c366ead7'
+token_link4m = '67fb49b8ef455711087542b1'
 link4m = requests.get(f'https://link4m.co/api-shorten/v2?api={token_link4m}&url={url}').json()
 if link4m['status']=="error": 
 	print(link4m['message'])
