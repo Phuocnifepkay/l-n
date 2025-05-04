@@ -31,11 +31,9 @@ xnhac = "\033[1;36m"
 ptool = trang + "~" + trang + "[" + do + "+" + trang + "] " + trang + "=> "
 ptool = trang + "~" + trang + "[" + do + "÷" + trang + "] " + trang + "=> "
 # Config
-__TELEGRAM__ = '@duykhanhmedia'
 __ZALO__ = '0915.948.201'
 __ADMIN__ = 'PhuocAn'
 __VERSION__ = '1.0'
-__FACEBOOK__ = 'PHUOC CODER'
 # Phần List
 list_id_name_page = []
 count = 0
@@ -69,11 +67,9 @@ def banner():
           ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░     
                                    ░ ░ ░                      
 
-\033[1;37m~ \033[1;32mTelegram: \033[0;93m{__TELEGRAM__}
 \033[1;37m- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 {ptool}\033[1;31mCopyright By: \033[1;35m{__ADMIN__}
 {ptool}\033[1;32mZalo: \033[1;34m{__ZALO__}
-{ptool}\033[1;36mFacebook: \033[1;37mFb.com/{__FACEBOOK__}
 {ptool}\033[0;93mTool Tăng View Story Fb Bằng Page Pro5 Version {__VERSION__}
 \033[1;37m- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"""
     echo(banner)
