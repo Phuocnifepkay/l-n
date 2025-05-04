@@ -182,7 +182,7 @@ for i in getidpro5:
     gomlist = f'{uid_page}|{name_page}'
     list_id_name_page.append(gomlist)
 # DỮ LIỆU ĐÃ GET + NHẬP DELAY + SỐ VIEW CẦN TĂNG!
-print(ndp_tool+luc+'Đã Tìm Thấy '+trang+str(len(list_id_name_page))+luc+' Page Pro5')
+print(ptool+luc+'Đã Tìm Thấy '+trang+str(len(list_id_name_page))+luc+' Page Pro5')
 thanh()
 url_str = input(ptool+luc+'Vui Lòng Nhập Link Str Cần Tăng View'+trang+': '+vang)
 # GET DỮ LIỆU TRONG URL
