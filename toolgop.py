@@ -86,7 +86,7 @@ while True:
 	elif chon == '2.1':
 		sys.exit("Tool đang bảo.trì,chx làm dc!")
 	elif chon == '2.2':
-		sys.exit("Tool đang bảo.trì,chx làm dc!")
+		sys.exit("https://raw.githubusercontent.com/Phuocnifepkay/l-n/refs/heads/main/snap.py!")
 	elif chon == '3.1':
 		# Thanh Công
 		sys.exit("Tool đang bảo.trì,chx làm dc!")
