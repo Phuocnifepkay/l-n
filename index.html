@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTOOL ❄🌸</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #ffe4e1; /* Hồng nhạt */
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background: #ff69b4;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .menu button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .menu button:hover {
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        .section {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: #ff69b4;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(255, 20, 147, 0.2);
+        }
+
+        .download-btn {
+            display: block;
+            width: 100%;
+            max-width: 350px;
+            background: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px auto;
+            transition: 0.3s;
+        }
+
+        .download-btn:hover {
+            background: #ff1493;
+            transform: scale(1.05);
+        }
+
+        /* Hiệu ứng tuyết rơi */
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            color: white;
+            font-size: 15px;
+            opacity: 0.8;
+            user-select: none;
+            z-index: 1;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(0); opacity: 0; }
+            20% { opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        /* Hiệu ứng hoa nở khi click */
+        .flower {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-image: url('https://i.imgur.com/vxrJFCg.png');
+            background-size: cover;
+            pointer-events: none;
+            animation: bloom 0.6s linear;
+        }
+
+        @keyframes bloom {
+            0% { transform: scale(0); opacity: 1; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <button onclick="showSection('home')">🏠 Trang Chủ</button>
+            <button onclick="showSection('about')">ℹ️ Giới Thiệu</button>
+            <button onclick="showSection('setup')">⚙️ Hướng Dẫn</button>
+        </div>
+
+        <!-- Trang Chủ -->
+        <div id="home" class="section active">
+            <div class="title">🌸 KEDO×MLE TOOL 🌸</div>
+
+            <h3>📥 Tải về:</h3>
+        <a class="download-btn" href="https://zalo.me/g/mprgxe166" target="_blank">Tải Tool Gộp</a>
+        <a class="download-btn" href="https://www.python.org/downloads/release/python-3120/" target="_blank">Tải Python 3.12</a>
+        <a class="download-btn" href="https://filehippo.com/android/download_termux/0.119.1/" target="_blank">Tải Termux</a>
+        <a class="download-btn" href="https://plus24h.com/fplus/downloadgetcookieforfplus" target="_blank">Tải Get Cookie</a>        
+        </div>
+
+        <!-- Giới Thiệu -->
+<div id="about" class="section">
+    <div class="title">ℹ️ Giới Thiệu</div>
+    <ul>
+        <li>✅ Quản lý tài khoản dễ dàng</li>
+        <li>✅ Tự động hóa các thao tác</li>
+        <li>✅ Hỗ trợ đa nền tảng (PC, Android, trừ ioss)</li>
+    </ul>
+
+    <h3>🎥 Video Hướng Dẫn:</h3>
+    <p>Vui lòng xem trước các video hướng dẫn này để tránh gặp lỗi khi chạy tool.</p>  
+    <a class="video-link" href="https://youtu.be/eYoyboa0Ofc?si=WjGPFwY4cIQjl9TX" target="_blank">🔹 Cách Setup Tool Termux/a>  
+</div>
+
+
+        <!-- Hướng Dẫn Setup -->
+        <div id="setup" class="section">
+            <div class="title">⚙️ Hướng Dẫn Setup Tool Yêu Cầu Phiên Bản Python3.12 Nhé</div>
+
+            <h3>🎉Lưu Ý: Nếu Bạn Gặp Lỗi Dạng No Module Name 'jj đó' thì bạn chỉ cần nhập pip install jj đó </h3>
+            <h3>🎉Lưu Ý: Ví Dụ No Module Name 'requests' thì bạn nhập pip install requests là được rồi chạy lại tool</h3>
+            
+            <h3>📌 Cài Đặt Trên Android (Termux)</h3>
+            <div class="code-block">termux-setup-storage && apt update && apt upgrade && pkg install python</div>
+
+            <h3>📌 Cài Đặt Trên Cloud Shell GG</h3>
+            <div class="code-block">Copy link này vào trình duyệt https://shell.cloud.google.com/</div>
+            <div class="code-block">Bấm mở terminal lên rồi dán lênh này vào: Hiện tại ch up :)))</div>
+            <div class="code-block">Lần sau chạy lại thì vào gg shell mở terminal lên rồi nhập lệnh cd && python toolkedo.py</div>
+                
+            <h3>📌 Cài Đặt Trên iOS (iSH) Nên Sử Dụng Shell GG nhé</h3>
+            <div class="code-block">apk update && apk add python3 py3-pip</div>
+
+            <h3>📌 Cài Đặt Trên PC</h3>
+            <div class="code-block">python -m pip install --upgrade pip && pip install requests colorama bs4 selenium</div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Tạo hiệu ứng tuyết rơi
+        function createSnowflake() {
+            const snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            snowflake.innerHTML = "❄"; // Icon bông tuyết
+
+            // Vị trí ngẫu nhiên theo chiều ngang
+            snowflake.style.left = Math.random() * window.innerWidth + "px";
+            
+            // Ngẫu nhiên tốc độ rơi
+            let duration = Math.random() * 5 + 3; // 3 - 8 giây
+            snowflake.style.animationDuration = duration + "s";
+
+            document.body.appendChild(snowflake);
+
+            // Xóa bông tuyết khi rơi xong
+            setTimeout(() => {
+                snowflake.remove();
+            }, duration * 1000);
+        }
+
+        // Tạo tuyết rơi liên tục
+        setInterval(createSnowflake, 200);
+
+        // Hiệu ứng hoa nở khi click
+        document.addEventListener('click', function(event) {
+            const flower = document.createElement('div');
+            flower.classList.add('flower');
+            flower.style.left = `${event.clientX - 15}px`;
+            flower.style.top = `${event.clientY - 15}px`;
+            document.body.appendChild(flower);
+
+            setTimeout(() => {
+                flower.remove();
+            }, 600);
+        });
+    </script>
+</body>
+</html>
